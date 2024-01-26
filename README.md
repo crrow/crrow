@@ -3,19 +3,14 @@
 <!--START_SECTION:waka-->
 
 ```rust
-From: 26 December 2022 - To: 25 January 2024
+From: 18 January 2024 - To: 25 January 2024
 
-Total Time: 481 hrs 38 mins
+Total Time: 47 hrs 10 mins
 
-Rust              334 hrs 59 mins >>>>>>>>>>>>>>>>>--------   69.43 %
-Go                90 hrs 23 mins  >>>>>--------------------   18.73 %
-Markdown          28 hrs 4 mins   >------------------------   05.82 %
-protobuf          4 hrs 43 mins   -------------------------   00.98 %
-Terraform         3 hrs 10 mins   -------------------------   00.66 %
-Protocol Buffer   3 hrs 7 mins    -------------------------   00.65 %
-justfile          1 hr 51 mins    -------------------------   00.38 %
-Makefile          1 hr 19 mins    -------------------------   00.27 %
-TeX               1 hr 14 mins    -------------------------   00.26 %
+Rust             46 hrs 23 mins  >>>>>>>>>>>>>>>>>>>>>>>>>   98.34 %
+Markdown         9 mins          -------------------------   00.33 %
+Makefile         5 mins          -------------------------   00.19 %
+justfile         4 mins          -------------------------   00.17 %
 ```
 
 <!--END_SECTION:waka-->
