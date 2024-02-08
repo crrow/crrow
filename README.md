@@ -3,14 +3,14 @@
 <!--START_SECTION:waka-->
 
 ```rust
-From: 30 January 2024 - To: 06 February 2024
+From: 31 January 2024 - To: 07 February 2024
 
-Total Time: 60 hrs 2 mins
+Total Time: 57 hrs 16 mins
 
-Rust              57 hrs 30 mins  >>>>>>>>>>>>>>>>>>>>>>>>-   95.78 %
-Markdown          30 mins         -------------------------   00.85 %
-justfile          19 mins         -------------------------   00.54 %
-Makefile          16 mins         -------------------------   00.46 %
+Rust              53 hrs 58 mins  >>>>>>>>>>>>>>>>>>>>>>>>-   94.22 %
+Markdown          40 mins         -------------------------   01.18 %
+justfile          19 mins         -------------------------   00.56 %
+Makefile          16 mins         -------------------------   00.48 %
 ```
 
 <!--END_SECTION:waka-->
