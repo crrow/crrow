@@ -5,5 +5,4 @@
 - 👯 I’m looking to collaborate on Rust and Golang based projects.
 
 <!--START_SECTION:waka-->
-
 <!--END_SECTION:waka-->
