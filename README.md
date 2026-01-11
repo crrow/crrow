@@ -1,20 +1,13 @@
-# Crrow Blog
+# Hi, I'm Ryan
 
-A Quarto-based personal blog that renders to `docs/` for GitHub Pages, following the workflow used in `zig-book`.
+Just writing some code ...
 
-## Local workflow
+## Focus
 
-1. Install Quarto: <https://quarto.org/docs/get-started/>
-2. Render the site:
+- Storage systems
+- Cloud-native infrastructure and Kubernetes
 
-```bash
-quarto render
-```
+## WakaTime
 
-The generated site will be in `docs/`.
-
-## Structure
-
-- `index.qmd`: home page
-- `posts/`: blog posts
-- `_quarto.yml`: site config
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
