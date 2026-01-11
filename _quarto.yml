@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Crrow Blog"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: posts/index.qmd
+        text: Posts
+      - href: introduce.qmd
+        text: About
+  page-footer:
+    left: "Copyright 2025"
+
+format:
+  html:
+    theme: cosmo
+    toc: true

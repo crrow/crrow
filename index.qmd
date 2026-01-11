@@ -1,0 +1,18 @@
+---
+title: "Crrow Blog"
+subtitle: "Notes on systems, storage, and engineering"
+---
+
+Welcome. This is my personal blog where I share notes, experiments, and lessons learned.
+
+## What I write about
+
+- Distributed systems and storage
+- Performance tuning and profiling
+- Rust, Go, and low-level tooling
+- Engineering culture and career notes
+
+## Start here
+
+- [About me](introduce.qmd)
+- [All posts](posts/index.qmd)

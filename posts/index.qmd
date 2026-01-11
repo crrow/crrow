@@ -1,0 +1,9 @@
+---
+title: "Posts"
+listing:
+  contents: .
+  sort: "date desc"
+  type: default
+---
+
+A running list of posts and notes.

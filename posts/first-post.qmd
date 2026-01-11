@@ -1,0 +1,7 @@
+---
+title: "Hello, blog"
+date: 2025-02-01
+categories: [notes]
+---
+
+This is the first post. I'll share experiments, performance notes, and system design ideas here.
