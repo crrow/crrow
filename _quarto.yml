@@ -4,15 +4,21 @@ project:
   render:
     - index.qmd
     - posts/*.qmd
+    - life/*.qmd
+    - resume.qmd
 
 website:
   title: "Crrow Blog"
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: About
       - href: posts/index.qmd
         text: Posts
+      - href: life/index.qmd
+        text: Life
+      - href: resume.qmd
+        text: Resume
   page-footer:
     left: "Copyright 2025"
 

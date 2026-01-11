@@ -12,6 +12,3 @@ Welcome. This is my personal blog where I share notes, experiments, and lessons 
 - Rust, Go, and low-level tooling
 - Engineering culture and career notes
 
-## Start here
-
-- [All posts](posts/index.qmd)
