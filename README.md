@@ -17,5 +17,4 @@ The generated site will be in `docs/`.
 
 - `index.qmd`: home page
 - `posts/`: blog posts
-- `introduce.qmd`: about page
 - `_quarto.yml`: site config

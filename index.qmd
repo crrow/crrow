@@ -14,5 +14,4 @@ Welcome. This is my personal blog where I share notes, experiments, and lessons 
 
 ## Start here
 
-- [About me](introduce.qmd)
 - [All posts](posts/index.qmd)

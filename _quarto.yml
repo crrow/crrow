@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - posts/*.qmd
 
 website:
   title: "Crrow Blog"
@@ -10,8 +13,6 @@ website:
         text: Home
       - href: posts/index.qmd
         text: Posts
-      - href: introduce.qmd
-        text: About
   page-footer:
     left: "Copyright 2025"
 
