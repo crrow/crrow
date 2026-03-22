@@ -6,7 +6,7 @@ Currently focused on AI agents. Background in distributed storage and cloud-nati
 
 ## Tech Stack
 
-`Rust` `Go` `Zig` `AI Agents` `Distributed Systems` `Storage` `Kubernetes`
+`Rust` `Go` `Zig` `AI Agents` `Distributed Systems` `Storage`
 
 ## Links
 
