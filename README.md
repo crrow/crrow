@@ -1,8 +1,6 @@
 # Ryan
 
-Systems engineer based in Shanghai.
-
-Currently focused on AI agents. Background in distributed storage and cloud-native infrastructure.
+Based in Shanghai. Tinkering with AI agents these days, previously did storage and infra stuff.
 
 ## Tech Stack
 
