@@ -1,13 +1,20 @@
-# Hi, I'm Ryan
+# Ryan Tan
 
-Just writing some code ...
+Systems engineer based in Shanghai.
 
-## Focus
+Currently focused on AI agents. Background in distributed storage and cloud-native infrastructure.
 
-- Storage systems
-- Cloud-native infrastructure and Kubernetes
+## Featured
 
-## WakaTime
+- [**kisekifs**](https://github.com/crrow/kisekifs) — Rust implementation of JuiceFS, a distributed POSIX file system built on Redis and S3
+
+## Tech Stack
+
+`Rust` `Go` `Zig` `AI Agents` `Distributed Systems` `Storage` `Kubernetes`
+
+## Links
+
+- Blog: [crrow.github.io/crrow](https://crrow.github.io/crrow)
 
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
