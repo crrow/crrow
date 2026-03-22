@@ -1,4 +1,4 @@
-# Ryan Tan
+# Ryan
 
 Systems engineer based in Shanghai.
 
