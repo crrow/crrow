@@ -1,6 +1,6 @@
 # Ryan
 
-Based in Shanghai. Tinkering with AI agents these days, previously did storage and infra stuff.
+Based in Shanghai. Building [rararulab](https://github.com/rararulab). Previously did storage and infra stuff.
 
 ## Tech Stack
 
