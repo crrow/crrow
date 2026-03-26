@@ -1,0 +1,49 @@
+---
+title: "Tailscale's macOS Network Extension silently breaks Rust binaries"
+date: 2026-03-26
+categories: [debugging, rust, macos]
+---
+
+If you're running Tailscale on macOS and your Rust binary can't connect to local network IPs — this is probably why.
+
+## The symptom
+
+Any TCP connection from a Rust-compiled binary to a local IP (e.g. `10.0.0.167:7777`) fails with:
+
+```
+No route to host (os error 65)
+```
+
+Meanwhile `curl`, `python`, `nc` all connect to the same address just fine. Same machine, same moment.
+
+## The cause
+
+Tailscale's macOS Network Extension (`io.tailscale.ipn.macsys.network-extension`) intercepts TCP connections from **non-Apple-signed binaries**. Apple's own system tools are signed `arm64e` and bypass the extension entirely. Rust binaries compile to `arm64` with ad-hoc signatures — so they get intercepted.
+
+This happens below the application layer. It doesn't matter what HTTP client you use or how you configure it.
+
+## What doesn't work
+
+I tried all of these — none had any effect:
+
+- `reqwest::Client::builder().no_proxy()` — problem is below app layer
+- `Proxy::custom(|_| None)` — same reason
+- `tailscale set --exit-node-allow-lan-access=true` — no exit node configured, irrelevant
+- Binding the socket to en0's local IP before connecting — still intercepted
+- Even raw `libc::connect()` from Rust fails while Python's `socket.connect()` succeeds simultaneously
+
+## Possible solutions
+
+Still investigating, but the options are:
+
+1. **Code-sign the binary** with a real developer certificate (not ad-hoc)
+2. **Local proxy relay** — use socat or SSH tunnel (Apple-signed) to forward traffic
+3. **Switch Tailscale to userspace networking** mode instead of Network Extension
+4. **Tailscale admin console** — exclude local subnets from interception
+5. **`NEFilterManager` API** — programmatically request exclusion
+
+## Takeaway
+
+This is a macOS platform issue, not a Rust or networking library bug. If you're debugging "No route to host" errors that only affect your compiled binaries, check whether a Network Extension is intercepting your traffic.
+
+Tracking this at [rararulab/rara#1023](https://github.com/rararulab/rara/issues/1023).
