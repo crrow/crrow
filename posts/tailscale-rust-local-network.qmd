@@ -42,8 +42,38 @@ Still investigating, but the options are:
 4. **Tailscale admin console** — exclude local subnets from interception
 5. **`NEFilterManager` API** — programmatically request exclusion
 
+## You're not alone
+
+I searched around and found no one reporting this exact combination (Tailscale + Rust binary + local network), but there are two well-documented issues that likely overlap:
+
+### Tailscale routing bugs on macOS
+
+- [tailscale/tailscale#15366](https://github.com/tailscale/tailscale/issues/15366) — With an exit node active on macOS, local network access breaks even with "Allow Local Network Access" enabled. Tailscale installs incorrect routing rules. Still broken on macOS 26 Beta.
+- [tailscale/tailscale#1344](https://github.com/tailscale/tailscale/issues/1344) — Hosts on the same subnet become unreachable through Tailscale due to route priority: local subnet routes are narrower and win over Tailscale's wider routes.
+
+### macOS Sequoia Local Network Privacy
+
+Starting with macOS 15 Sequoia, Apple added a Local Network Privacy layer that silently blocks third-party binaries from accessing local network resources:
+
+- [Apple Developer Forums](https://developer.apple.com/forums/thread/778457) — Third-party binaries launched from launchd agents get denied local network access even after the user approves the privacy prompt. A known Sequoia bug.
+- [Mozilla Bug #1919889](https://bugzilla.mozilla.org/show_bug.cgi?id=1919889) — Firefox couldn't access local network sites on Sequoia — same class of issue.
+- [Michael Tsai's blog](https://mjtsai.com/blog/2024/10/02/local-network-privacy-on-sequoia/) — Detailed roundup of developer reports on Sequoia's Local Network Privacy silently denying permissions.
+- [Hackaday](https://hackaday.com/2024/11/01/apple-forces-the-signing-of-applications-in-macos-sequoia-15-1/) — macOS 15.1 forces application signing; ad-hoc signed binaries face stricter restrictions.
+
+### What this means
+
+The root cause is likely **one or both** of these issues stacking:
+
+1. Tailscale installs broken routes for local subnets on macOS
+2. macOS Sequoia's Local Network Privacy silently blocks ad-hoc signed binaries
+
+It's probably not just the Network Extension intercepting traffic — there may be an OS-level privacy gate involved too.
+
 ## Takeaway
 
-This is a macOS platform issue, not a Rust or networking library bug. If you're debugging "No route to host" errors that only affect your compiled binaries, check whether a Network Extension is intercepting your traffic.
+If you're debugging "No route to host" errors that only affect your compiled binaries on macOS, check two things:
+
+1. Whether a Network Extension (Tailscale, Little Snitch, etc.) is intercepting your traffic
+2. Whether macOS Local Network Privacy is silently blocking your binary (System Settings > Privacy & Security > Local Network)
 
 Tracking this at [rararulab/rara#1023](https://github.com/rararulab/rara/issues/1023).
