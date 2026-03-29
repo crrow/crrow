@@ -8,7 +8,8 @@ project:
     - resume.qmd
 
 website:
-  title: "Crrow Blog"
+  title: "crrow"
+  site-url: "https://crrow.github.io/crrow/"
   navbar:
     left:
       - href: index.qmd
@@ -19,8 +20,6 @@ website:
         text: Life
       - href: resume.qmd
         text: Resume
-  page-footer:
-    left: "Copyright 2025"
 
 format:
   html:
