@@ -24,25 +24,6 @@ Building [rararulab](https://github.com/rararulab), writing at [crrow.github.io/
 
 `Rust` `Go` `Zig` `AI Agents` `Distributed Systems` `Storage`
 
-## Top Languages
-
 <p>
   <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=crrow&layout=compact&theme=rose_pine&hide_border=true&langs_count=8" alt="Top languages" />
 </p>
-
-## Weekly Coding Time
-
-<!--START_SECTION:waka-->
-
-```rust
-From: 22 March 2026 - To: 29 March 2026
-
-Total Time: 46 hrs 49 mins
-
-Rust              19 hrs 7 mins         >>>>>>>>>>---------------   40.51 %
-Markdown          14 hrs 21 mins        >>>>>>>>-----------------   30.42 %
-TypeScript        2 hrs 19 mins         >------------------------   04.93 %
-CSS               1 hr 10 mins          >------------------------   02.49 %
-```
-
-<!--END_SECTION:waka-->
