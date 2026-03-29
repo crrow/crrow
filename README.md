@@ -24,11 +24,10 @@ Building [rararulab](https://github.com/rararulab), writing at [crrow.github.io/
 
 `Rust` `Go` `Zig` `AI Agents` `Distributed Systems` `Storage`
 
-## Stats
+## Top Languages
 
 <p>
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=crrow&show_icons=true&theme=rose_pine&hide_border=true&include_all_commits=true&rank_icon=percentile" alt="GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=crrow&layout=compact&theme=rose_pine&hide_border=true&langs_count=8" alt="Top languages" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=crrow&layout=compact&theme=rose_pine&hide_border=true&langs_count=8" alt="Top languages" />
 </p>
 
 ## Weekly Coding Time
