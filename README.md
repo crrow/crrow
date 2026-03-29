@@ -27,7 +27,7 @@ Building [rararulab](https://github.com/rararulab), writing at [crrow.github.io/
 ## Top Languages
 
 <p>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=crrow&layout=compact&theme=rose_pine&hide_border=true&langs_count=8" alt="Top languages" />
+  <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=crrow&layout=compact&theme=rose_pine&hide_border=true&langs_count=8" alt="Top languages" />
 </p>
 
 ## Weekly Coding Time
